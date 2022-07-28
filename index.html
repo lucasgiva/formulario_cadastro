@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link google fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css: -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="aside-section">
+        <aside class="aside-container">
+          <h1 class="title">Bem vindo de volta</h1>
+          <p class="text-content">
+            Entre e comece uma nova aventura ou retome de onde parou !
+          </p>
+          <button class="btn btn-alternative">Entrar</button>
+        </aside>
+      </section>
+      
+      <form class="form" action="">
+        <fieldset class="border-content">
+          <legend class="form-title">Cadastro</legend>
+
+          <!-- Nome -->
+          <label for="nome" class="label">
+            Digite o seu nome:
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="user-data"
+              placeholder="Nome"
+              title="Digite o seu nome"
+              required
+            />
+          </label>
+
+          <label for="sobrenome" class="label">
+            Digite o seu sobrenome:
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="user-data"
+              placeholder="sobrenome"
+              title="Digite o seu sobrenome"
+              required
+            />
+          </label>
+
+          <!-- Email -->
+          <label for="email" class="label">
+            Digite o seu email:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="user-data"
+              placeholder="Email"
+              title="Digite o seu email"
+            />
+          </label>
+
+          <!-- Senha -->
+          <label for="password" class="label">
+            Digite a sua senha:
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="user-data"
+              placeholder="Senha"
+              title="Digite sua senha"
+              required
+            />
+          </label>
+
+          <!-- Botão para enviar -->
+          <input type="submit" value="Cadastrar" class="btn" />
+
+          <label class="count">Já possui uma conta? <a href="#home">clique aqui</a></label>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

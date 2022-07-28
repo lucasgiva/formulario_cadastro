@@ -1,0 +1,126 @@
+/*Geral*/
+*{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0; 
+  padding: 0; 
+}
+
+body{
+  background: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh; 
+}
+/*Main: */
+.main-container{
+  margin: 2.3em auto;  
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+}
+
+/*----- FORM -----*/
+.form{
+  background-color: #fff;
+  border-radius: .5em; 
+  padding: 4%;
+}
+/*fieldset*/
+.border-content{
+ border-color: rgb(2, 183, 255); 
+ border-radius: .4em;
+ padding: .8em; 
+}
+/*legend*/
+.form-title{
+  font-size: 1.2em;
+  color: black; 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize; 
+}
+
+/* Padrao de label e input: */
+.label{
+  display: block;
+  padding: .5em; 
+  margin-top: .3em; 
+  font-family: 'Poppins', sans-serif;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.user-data{
+  display: block;
+  margin: 0 auto;
+  border-radius: .5em;
+  border: solid .1em  rgb(2, 183, 255); ; 
+  padding: .5em; 
+  margin-top: 1em; 
+}
+
+/* botão: */
+.btn{
+  display: block; 
+  margin: 1em auto;
+  border: none; 
+  color: #fff; 
+  background-color: rgb(2, 183, 255);  
+  border-radius: .5em; 
+  padding: .5em; 
+  text-transform: uppercase;
+  width: 50%; 
+  transition: .2s linear all; 
+}
+
+.btn:hover{
+  background-color: rgb(5, 22, 255);
+  cursor: pointer; 
+}
+
+.count{
+  font-family: 'Poppins', sans-serif;
+  font-size: .8em;
+}
+
+.aside-section{
+  display: none;
+}
+
+/*----- RESPONSIVO -----*/ /* 48em = 768px */
+@media screen and (min-width: 48em ) {
+  
+  /*----- ASIDE PARA COMPUTADOR ----- */
+  .aside-section{
+   display: block;
+   width: 45%; 
+   align-self: center; 
+   margin-bottom: 6em; 
+   padding: 2.5em;
+  }
+
+  .title{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 2.3em;
+   font-weight: bold;
+   word-spacing: .1em;
+   text-transform: capitalize;
+   padding: .8em 0;
+  }
+
+ .text-content{
+   font-family: 'Poppins', sans-serif;;
+   font-size: 1.3em;
+   font-weight: bold; 
+ }
+
+ .btn-alternative{
+   margin-top: 2em;
+   width: 30%;
+   margin-left: 0; 
+ }
+
+}
+
+
